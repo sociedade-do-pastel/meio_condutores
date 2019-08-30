@@ -1,6 +1,6 @@
 # meio_condutores
 
-<img src="https://www.imgbase.info/images/safe-wallpapers/miscellaneous/computer/35121_computer_motherboard.jpg">
+<img src="readme_img.jpeg" style="width:300px;height:120px">
 
 <h2>Descrição</h2>
 Projeto de física que consiste na criação de um site sobre o tema semicondutores
