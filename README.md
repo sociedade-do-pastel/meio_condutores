@@ -1,6 +1,6 @@
 # meio_condutores
 
-<img src="readme_img.jpeg" style="width:300px;height:120px">
+<img src="readme_img.jpeg" width='500' height='200'>
 
 <h2>Descrição</h2>
 Projeto de física que consiste na criação de um site sobre o tema semicondutores
