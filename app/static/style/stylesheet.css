@@ -1,0 +1,68 @@
+.navbar {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c0d0f;
+}
+
+.navbar li{
+  list-style: none;
+  float: left;
+  }
+
+.navbar li a{
+  text-decoration: none;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  transition: all 0.5s;
+  padding: 15px 20px;
+}
+
+.navbar li a:before {
+  content: '';
+  width: 30px;
+  position: absolute;
+  border-bottom: 4px solid #ef7c1a;
+  bottom: 0;
+  right: 350px;
+  transition: all 0.5s;
+}
+
+.navbar li a:hover:before {
+  right:0;
+}
+
+.navbar li a:hover:not(.selecionado) {
+  background-color: #885522;
+}
+
+.selecionado {
+  background-color: #ef7c1a;
+  color: white;
+}
+
+a:link {
+    color: orangered;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: red;
+}

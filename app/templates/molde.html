@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{ titulo }} - Semicondutores </title>
+		<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='style/stylesheet.css') }}"> 
+	</head>
+	<body>
+		<div class="navbar">
+   			<ul>
+      			<!-- lista será estilizada com css  -->
+			<li><a  href="/index"><i class="fas fa-home"></i>INDEX</a></li>
+				<li><a href="/semicondutores"><i class="far fa-newspaper"></i></i>SEMICONDUTORES</a></li>
+    				</ul>
+			</div>
+			{% block content %} {% endblock %}
+		</body>
+		</html>
+
