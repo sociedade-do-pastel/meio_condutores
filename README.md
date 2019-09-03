@@ -13,7 +13,7 @@ Projeto de física que consiste na criação de um site sobre o tema semiconduto
    <li>Material dinâmico</li>
 </ul>
 
-# COMO FAZER ESSA MARAVILHA FUNCIONAR
+# Instruções:
 1. Certifique-se que seu pip e python (versão 3) estejam **atualizados** `pip install --upgrade pip`
 2. Crie um ambiente virtual com o nome desejado, no meu caso, criei com o nome "semicondutores" `python3 -m venv semicondutores`
 3. Ative esse ambiente virtual com `source semicondutores/bin/activate`
