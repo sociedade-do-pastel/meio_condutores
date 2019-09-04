@@ -2,4 +2,32 @@
 
 {% block content %}
 	<h1> pagina {{pag}}</h1>
+	<br>
+	<h2>Condutividade dos materiais</h2>
+	<br>
+	<p>É de conhecimento comum que a humanidade obteve grandes avanços tecnológicos ao descobrir uma maneira de "domar" a corrente elétrica, ou seja, conter e conduzir os elétrons livres como bem entender. Contudo, isso só foi possível graças a uma característica dos materiais: a condutividade e a resistividade.</p>
+	<p>Na verdade, a condutividade e a resistividade tratam da mesma propriedade, porém de pontos de vista diferentes. A condutividade mensura a facilidade dos elétrons livres fluírem por um material; e a resistividade mede quanta resistência o material apresenta a esse fluxo.</p>
+	<p>De acordo com essas grandezas os materiais podem ser classificados em 3 tipos:</p>
+	<ul>
+		<li>Condutores: Apresentam grande facilidade na condução de corrente elétrica (ou pouca resistência). </li>
+		<li>Isolantes: Possuem grande resistência à corrente elétrica (ou pouca facilidade na condução).
+		<li>Semicondutores: Também conhecidos como semi-isolantes (porém essa nomenclatura é pouco utilizada) são materiais que se encontram no meio dos condutores e isolantes, podendo assumir as propriedades de qualquer um dos dois dependendo da situação em que são submetidos. Graças a essa peculiaridade que foram desenvolvidos os circuitos integrados e os computadores.</li>
+	</ul>
+	<p>A resistividade elétrica, representada pela letra grega rho (\(\rho\)), consiste em uma constante medida em ohm metro (\(\varOmega\)m) e é definida pelo material. Entretanto, por estar diretamente relacionado com a resistência elétrica (R) é capaz de obtê-la através da fórmula: 
+	$$\rho = {AR \over L}$$
+	<ul style="list-style-type:none;">
+		<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
+		<li>R = resistência elétrica [\(\varOmega\)]</li>
+		<li>A = área [m²]</li>
+		<li>L = comprimento [m]</li>
+	</ul>
+	</p>
+	<p>A condutividade elétrica, representada pela letra grega sigma (\(\sigma\)), é medida em siemens por metro (S/m) e é definida pela fórmula:
+	$$\sigma = {1 \over \rho}$$
+	<ul style="list-style-type:none;">
+		<li>\(\sigma\) = condutividade elétrica [S/m]
+		<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
+	</ul>
+	</p>
+	
 {% endblock %}
