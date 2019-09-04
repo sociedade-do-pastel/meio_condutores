@@ -13,13 +13,13 @@ Projeto de física que consiste na criação de um site sobre o tema semiconduto
    <li>Material dinâmico</li>
 </ul>
 
-# Instruções:
-1. Certifique-se que seu pip e python (versão 3) estejam **atualizados** `pip install --upgrade pip`
-2. Crie um ambiente virtual com o nome desejado, no meu caso, criei com o nome "semicondutores" `python3 -m venv semicondutores`
-3. Ative esse ambiente virtual com `source semicondutores/bin/activate`
-4. Instale a delicia do flask  `pip install flask`
-5. Se quiser, instale o flask globalmente pulando para o passo 4
-6. Exporte a variavel `export FLASK_APP=server_semicondutores.py`
-7. Finalmente ative seu servidor com `flask run`
-8. yaay
-
+<h2>Instruções:</h2>
+<ol>
+<li>Certifique-se que seu pip e python (versão 3) estejam **atualizados** `pip install --upgrade pip`</li>
+<li>Se quiser, instale o flask globalmente pulando para o passo 5</li>
+<li>Crie um ambiente virtual com o nome desejado, no meu caso, criei com o nome "semicondutores" `python3 -m venv semicondutores`</li>
+<li>Ative esse ambiente virtual com `source semicondutores/bin/activate`</li>
+<li>Instale a delicia do flask  `pip install flask`</li>
+<li>Exporte a variavel `export FLASK_APP=server_semicondutores.py`</li>
+<li>Finalmente ative seu servidor com `flask run`</li>
+<li>yaay</li>
