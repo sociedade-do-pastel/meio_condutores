@@ -1,64 +1,105 @@
 {%extends "molde.html" %}
 
 {% block content %}
-	<h1> pagina {{pag}}</h1>
-	<br>
-	<h2>Condutividade dos materiais</h2>
-	<br>
-	<p>É de conhecimento comum que a humanidade obteve grandes avanços tecnológicos ao descobrir uma maneira de "domar" a corrente elétrica, ou seja, conter e conduzir os elétrons livres como bem entender. Contudo, isso só foi possível graças a uma característica dos materiais: a condutividade e a resistividade.</p>
-	<p>Na verdade, a condutividade e a resistividade tratam da mesma propriedade, porém de pontos de vista diferentes. A condutividade mensura a facilidade dos elétrons livres fluírem por um material; e a resistividade mede quanta resistência o material apresenta a esse fluxo.</p>
-	<p>De acordo com essas grandezas os materiais podem ser classificados em 3 tipos:</p>
-	<ul>
-		<li>Condutores: Apresentam grande facilidade na condução de corrente elétrica (ou pouca resistência). </li>
-		<li>Isolantes: Possuem grande resistência à corrente elétrica (ou pouca facilidade na condução).
-		<li>Semicondutores: Também conhecidos como semi-isolantes (porém essa nomenclatura é pouco utilizada) são materiais que se encontram no meio dos condutores e isolantes, podendo assumir as propriedades de qualquer um dos dois dependendo da situação em que são submetidos. Graças a essa peculiaridade que foram desenvolvidos os circuitos integrados e os computadores.</li>
-	</ul>
-	<p>A resistividade elétrica, representada pela letra grega rho (\(\rho\)), consiste em uma constante medida em ohm metro (\(\varOmega\)m) e é definida pelo material. Entretanto, por estar diretamente relacionado com a resistência elétrica (R) é capaz de obtê-la através da fórmula: 
-	$$\rho = {AR \over L}$$
-	<ul style="list-style-type:none;">
-		<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
-		<li>R = resistência elétrica [\(\varOmega\)]</li>
-		<li>A = área [m²]</li>
-		<li>L = comprimento [m]</li>
-	</ul>
-	</p>
-	<p>A condutividade elétrica, representada pela letra grega sigma (\(\sigma\)), é medida em siemens por metro (S/m) e é definida pela fórmula:
-	$$\sigma = {1 \over \rho}$$
-	<ul style="list-style-type:none;">
-		<li>\(\sigma\) = condutividade elétrica [S/m]
-		<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
-	</ul>
-	</p>
+	<div class="container-fluid">
+	    <div class="row mx-3 my-2">
+	        <div class="col-md-2 bg-light">
+	            <div class="flex-grow-1">
+	                <div class="nav flex-md-column">
+	                	<a class="nav-link text-dark text-center"><strong>INDEX</strong><hr></a>
+	                    <a href="" class="nav-link text-dark">Condutividade dos materiais</a>
+	                    <a href="" class="nav-link text-dark">Semicondutores</a>
+	                    <a href="" class="nav-link text-dark ml-4">Intrínseco</a>
+	                    <a href="" class="nav-link text-dark ml-4">Extrínseco</a>
+			    <a href="" class="nav-link text-dark ml-5">Tipo N</a>
+			    <a href="" class="nav-link text-dark ml-5">Tipo P</a>
+	                    <a href="" class="nav-link text-dark">Diodos</a>
+	                    <a href="" class="nav-link text-dark ml-4">Junção PN</a>
+	                    <a href="" class="nav-link text-dark ml-5">Diretamente polarizada</a>
+	                    <a href="" class="nav-link text-dark ml-5">Inversamente polarizada</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="col-md-1"></div>
+	        <div class="col-md-9 bg-light p-3" id="main">
+				<h1> pagina {{pag}}</h1>
+				<br>
+				<h2>Condutividade dos materiais</h2>
+				<br>
+				<p>É de conhecimento comum que a humanidade obteve grandes avanços tecnológicos ao descobrir uma maneira de "domar" a corrente elétrica, ou seja, conter e conduzir os elétrons livres como bem entender. Contudo, isso só foi possível graças a uma característica dos materiais: a condutividade e a resistividade.</p>
+				<p>Na verdade, a condutividade e a resistividade tratam da mesma propriedade, porém de pontos de vista diferentes. A condutividade mensura a facilidade dos elétrons livres fluírem por um material; e a resistividade mede quanta resistência o material apresenta a esse fluxo.</p>
+				<p>De acordo com essas grandezas os materiais podem ser classificados em 3 tipos:</p>
+				<ul>
+					<li>Condutores: Apresentam grande facilidade na condução de corrente elétrica (ou pouca resistência). </li>
+					<li>Isolantes: Possuem grande resistência à corrente elétrica (ou pouca facilidade na condução).
+					<li>Semicondutores: Também conhecidos como semi-isolantes (porém essa nomenclatura é pouco utilizada) são materiais que se encontram no meio dos condutores e isolantes, podendo assumir as propriedades de qualquer um dos dois dependendo da situação em que são submetidos. Graças a essa peculiaridade que foram desenvolvidos os circuitos integrados e os computadores.</li>
+				</ul>
+				<p>A resistividade elétrica, representada pela letra grega rho (\(\rho\)), consiste em uma constante medida em ohm metro (\(\varOmega\)m) e é definida pelo material. Entretanto, por estar diretamente relacionado com a resistência elétrica (R) é capaz de obtê-la através da fórmula:
+				$$\rho = {AR \over L}$$
+				<ul style="list-style-type:none;">
+					<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
+					<li>R = resistência elétrica [\(\varOmega\)]</li>
+					<li>A = área [m²]</li>
+					<li>L = comprimento [m]</li>
+				</ul>
+				</p>
+				<p>A condutividade elétrica, representada pela letra grega sigma (\(\sigma\)), é medida em siemens por metro (S/m) e é definida pela fórmula:
+				$$\sigma = {1 \over \rho}$$
+				<ul style="list-style-type:none;">
+					<li>\(\sigma\) = condutividade elétrica [S/m]
+					<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
+				</ul>
+				</p>
+				<p>~~~Inserir imagem aqui~~~</p>
+				<br>
+				<h2>Semicondutores</h2>
+				<br>
+				<h3>Semicondutor intrínseco</h3>
+				<p>O semicondutor intrínseco é aquele que se encontra na forma pura, ou seja, atua sem a adição de nenhuma substância. Esse tipo de semicondutor é raramente utilizado.</p>
+				<p>Entre os semicondutores mais utilizados estão o germânio (Ge) e o silício (Si) e a análise dos semicondutores pode ser feita através de conceitos físicos (bandas de energia) ou conceitos químicos (ligações covalentes). Por motivos didáticos será abordado o silício através de conceitos químicos.</p>
+				<p>O silício possui 4 elétrons na camada de valência e é considerado neutro, pois o número de elétrons é igual ao número de prótons. Muitas vezes é utilizada a nomenclatura "cristal de silício", uma vez que ele forma uma estrutura geométrica cúbica: cada elétron da camada de valência se liga a um elétron da camada de valência de outro silício, estabelecendo uma simetria.</p>
+				<p>Por motivos de simplificação será representado apenas os elétrons da camada de valência.</p>
+				<p>~~~Inserir imagem aqui~~~</p>
+				<p>Na condição de semicondutor intrínseco o silício atua como um isolante, já que não possui elétrons livres; mas quando submetido a temperaturas elevadas pode ocorrer o rompimento de ligações covalentes, fazendo com que o elétron da camada de valência se torne um elétron livre e surja uma lacuna no local.</p>
+				<p>Os elétrons são considerados cargas negativas (-), e uma vez que as lacunas representam a ausência de elétrons são consideradas cargas positivas (+). Colocando o cristal de silício sob uma diferença de potencial (ddp) somos capazes de movimentar essas cargas.</p>
+				<p>A movimentação dos elétrons é algo conhecido: se direcionam ao polo positivo, região de maior potencial. Também é atribuído movimento as lacunas, embora a lacuna propriamente dita não altere sua posição. O que acontece é o preenchimento da primeira lacuna por um elétron livre e surgimento de uma nova lacuna no local de origem desse elétron, por isso é dito que o movimento das lacunas possui sentido contrário ao movimento dos elétrons.</p>
+				<p>~~~Inserir imagem aqui~~~</p>
+				<br>
+				<h3>Semicondutor extrínseco</h3>
+				<p>Os semicondutores extrínsecos são aqueles que possuem a adição de impurezas (átomos) com a finalidade de alterar sua resistividade. Há dois tipos de semicondutores extrínsecos: o tipo P e o tipo N.</p>
+				<br>
+				<h4>Semicondutor tipo N</h4>
+				<p>Ocorre quando é adicionado ao cristal um material pentavalente (5 elétrons na camada de valência), com o objetivo de tornar o material mais condutivo. Em geral, o material mais utilizado como impureza neste tipo é o fósforo (P).</p>
+				<p>Vamos considerar o silício como nosso cristal semicondutor. Considerando que um ou mais átomos de silício tenha sidos trocados por átomos de fósforo, por exemplo, e que a quantidade de átomos de silício seja significativamente maior que a quantidade de átomos de fósforo, todos os átomos de fósforo estabelecerão uma ligação covalente com um átomo de silício; o quinto elétron do fósforo se encontrará fora da estrutura, fracamente ligado ao átomo, bastando uma pequena quantidade de carga para que se separe e torne-se um elétron livre. Só ocorreria a garantia da permanência do quinto elétron ao fósforo em temperatura zero absoluto, o que não é um caso real; na prática, um breve aumento da temperatura já seria o suficiente para torná-lo livre.</p>
+				<p>Neste caso, devido à grande quantidade de elétrons, são denominados portadores majoritários; e as lacunas, portadores minoritários. Justamente por possuir uma grande quantidade de carga negativa que o semicondutor é denominado tipo N (negative).</p>
+				<p>~~~Inserir imagem aqui~~~</p>
+				<br>
+				<h4>Semicondutor tipo P</h4>
+				<p>Ao contrário do que acontece com o semicondutor tipo N, no qual átomos são adicionados com o intuito de aumentar a condutividade, o objetivo é aumentar a quantidade de lacunas. Para isso, o cristal é dopado com impurezas trivalentes (3 elétrons na cama de valência). Neste caso, o mais comumente utilizado é o boro (B).</p>
+				<p>O átomo de boro só possui 3 elétrons para estabelecer uma ligação com os átomos de silício, porém, as ligações ainda sim são realizadas. O que ocorre é que a ausência de um elétron na ligação com o quarto silício atua como uma lacuna.</p>
+				<p>Com o aumento da temperatura, um elétron que já se encontra em uma ligação covalente ganha energia o suficiente para se tornar livre, e então se desloca para preencher a lacuna formada entre o boro e o quarto silício, formando uma nova lacuna em seu local de origem.</p>
+				<p>Nessa situação, as lacunas assumem o papel de portador majoritário e os elétrons de portadores minoritários. Lembrando que as lacunas representam uma carga positiva, nomeando assim o semicondutor como tipo P (positive).</p>
+				<p>~~~Inserir imagem aqui~~~</p>
+				<br><br>
+	<h2>Diodos</h2>
+	<p>O diodo é um componente elétrico construído a partir de uma junção PN, cujo o intuito é permitir a passagem da corrente elétrica apenas em um sentido de polarização. Vamos estudar melhor esse fenômeno.</p>
+	<h3>Junção PN</h3>
+	<p>Ao combinarmos metalurgicamente um semicondutor tipo P com um semicondutor tipo N, formamos uma junção PN.</p>
+	<p>Quando as duas superfícies entram em contato, os elétrons livres do material tipo N deslocam-se para o material tipo P para preencher as lacunas, assim, haverá uma corrente de elétrons do N para o P, denominada corrente de difusão, e uma corrente de lacunas de P para N, denominada corrente de deriva. Esse fenômeno chama-se difusão</p>
+	<p>Entretanto, uma vez que os átomos na região de contato se estabilizem, surge uma região estacionária no local, denominada região de cargas espaciais (RCE) ou zona de depleção. Essa região atua como uma barreira de potencial, pois já não existe uma força atraindo os elétrons para as lacunas no local, fazendo com que a diferença de potencial entre os dois polos tenha que ser bem maior para que a força de atração seja suficientemente grande para superar essa barreira. Quando a junção está em equilíbrio, a soma das correntes de junção é nula.</p>
 	<p>~~~Inserir imagem aqui~~~</p>
 	<br>
-	<h2>Semicondutores</h2>
-	<br>
-	<h3>Semicondutor intrínseco</h3>
-	<p>O semicondutor intrínseco é aquele que se encontra na forma pura, ou seja, atua sem a adição de nenhuma substância. Esse tipo de semicondutor é raramente utilizado.</p>
-	<p>Entre os semicondutores mais utilizados estão o germânio (Ge) e o silício (Si) e a análise dos semicondutores pode ser feita através de conceitos físicos (bandas de energia) ou conceitos químicos (ligações covalentes). Por motivos didáticos será abordado o silício através de conceitos químicos.</p>
-	<p>O silício possui 4 elétrons na camada de valência e é considerado neutro, pois o número de elétrons é igual ao número de prótons. Muitas vezes é utilizada a nomenclatura "cristal de silício", uma vez que ele forma uma estrutura geométrica cúbica: cada elétron da camada de valência se liga a um elétron da camada de valência de outro silício, estabelecendo uma simetria.</p>
-	<p>Por motivos de simplificação será representado apenas os elétrons da camada de valência.</p>
-	<p>~~~Inserir imagem aqui~~~</p>
-	<p>Na condição de semicondutor intrínseco o silício atua como um isolante, já que não possui elétrons livres; mas quando submetido a temperaturas elevadas pode ocorrer o rompimento de ligações covalentes, fazendo com que o elétron da camada de valência se torne um elétron livre e surja uma lacuna no local.</p>
-	<p>Os elétrons são considerados cargas negativas (-), e uma vez que as lacunas representam a ausência de elétrons são consideradas cargas positivas (+). Colocando o cristal de silício sob uma diferença de potencial (ddp) somos capazes de movimentar essas cargas.</p>
-	<p>A movimentação dos elétrons é algo conhecido: se direcionam ao polo positivo, região de maior potencial. Também é atribuído movimento as lacunas, embora a lacuna propriamente dita não altere sua posição. O que acontece é o preenchimento da primeira lacuna por um elétron livre e surgimento de uma nova lacuna no local de origem desse elétron, por isso é dito que o movimento das lacunas possui sentido contrário ao movimento dos elétrons.</p>
+	<h4>Junção PN diretamente polarizada</h4>
+	<p>Ao ligar os polos positivos e negativos da junção com os respectivos polos de uma bateria, ocorre um aumento dos elétrons na junção N e o potencial da junção P é somado com o potencial do polo positivo da bateria, assim, a diferença de potencial se torna suficientemente grande para vencer a zona de depleção.</p>
+	<p>Quando uma junção PN é polarizada, surge uma nova corrente, a corrente de saturação. A corrente de saturação é formada pela ação da temperatura nos portadores minoritários de cada polo da junção. No caso da polarização direta, a corrente total é dada pela corrente de deriva menos a corrente de saturação.</p>
 	<p>~~~Inserir imagem aqui~~~</p>
 	<br>
-	<h3>Semicondutor extrínseco</h3>
-	<p>Os semicondutores extrínsecos são aqueles que possuem a adição de impurezas (átomos) com a finalidade de alterar sua resistividade. Há dois tipos de semicondutores extrínsecos: o tipo P e o tipo N.</p>
-	<br>
-	<h4>Semicondutor tipo N</h4>
-	<p>Ocorre quando é adicionado ao cristal um material pentavalente (5 elétrons na camada de valência), com o objetivo de tornar o material mais condutivo. Em geral, o material mais utilizado como impureza neste tipo é o fósforo (P).</p>
-	<p>Vamos considerar o silício como nosso cristal semicondutor. Considerando que um ou mais átomos de silício tenha sidos trocados por átomos de fósforo, por exemplo, e que a quantidade de átomos de silício seja significativamente maior que a quantidade de átomos de fósforo, todos os átomos de fósforo estabelecerão uma ligação covalente com um átomo de silício; o quinto elétron do fósforo se encontrará fora da estrutura, fracamente ligado ao átomo, bastando uma pequena quantidade de carga para que se separe e torne-se um elétron livre. Só ocorreria a garantia da permanência do quinto elétron ao fósforo em temperatura zero absoluto, o que não é um caso real; na prática, um breve aumento da temperatura já seria o suficiente para torná-lo livre.</p>
-	<p>Neste caso, devido à grande quantidade de elétrons, são denominados portadores majoritários; e as lacunas, portadores minoritários. Justamente por possuir uma grande quantidade de carga negativa que o semicondutor é denominado tipo N (negative).</p>
+	<h4>Junção PN inversamente polarizada</h4>
+	<p>Com a polarização reversa, o polo positivo da bateria irá atrair os elétrons da junção N ainda mais pra extremidade, e o polo negativo irá fazer a mesma coisa com as lacunas no polo N. Assim, a zona de depleção será aumentada, impedindo praticamente toda a passagem de corrente entre os polos. A única corrente presente será a mesma da junção PN diretamente polarizada, mas nesse caso ela recebe o nome de corrente reversa de saturação.</p> 
 	<p>~~~Inserir imagem aqui~~~</p>
-	<br>
-	<h4>Semicondutor tipo P</h4>
-	<p>Ao contrário do que acontece com o semicondutor tipo N, no qual átomos são adicionados com o intuito de aumentar a condutividade, o objetivo é aumentar a quantidade de lacunas. Para isso, o cristal é dopado com impurezas trivalentes (3 elétrons na cama de valência). Neste caso, o mais comumente utilizado é o boro (B).</p>
-	<p>O átomo de boro só possui 3 elétrons para estabelecer uma ligação com os átomos de silício, porém, as ligações ainda sim são realizadas. O que ocorre é que a ausência de um elétron na ligação com o quarto silício atua como uma lacuna.</p>
-	<p>Com o aumento da temperatura, um elétron que já se encontra em uma ligação covalente ganha energia o suficiente para se tornar livre, e então se desloca para preencher a lacuna formada entre o boro e o quarto silício, formando uma nova lacuna em seu local de origem.</p>
-	<p>Nessa situação, as lacunas assumem o papel de portador majoritário e os elétrons de portadores minoritários. Lembrando que as lacunas representam uma carga positiva, nomeando assim o semicondutor como tipo P (positive).</p>	
-	<p>~~~Inserir imagem aqui~~~</p>
-	<br>
+    
+			</div>
+		</div>
+	</div>
 
 {% endblock %}
