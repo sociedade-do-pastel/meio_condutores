@@ -7,24 +7,26 @@
 	            <div class="flex-grow-1">
 	                <div class="nav flex-md-column">
 	                	<a class="nav-link text-dark text-center"><strong>INDEX</strong><hr></a>
-	                    <a href="" class="nav-link text-dark">Condutividade dos materiais</a>
-	                    <a href="" class="nav-link text-dark">Semicondutores</a>
-	                    <a href="" class="nav-link text-dark ml-4">Intrínseco</a>
-	                    <a href="" class="nav-link text-dark ml-4">Extrínseco</a>
-			    <a href="" class="nav-link text-dark ml-5">Tipo N</a>
-			    <a href="" class="nav-link text-dark ml-5">Tipo P</a>
-	                    <a href="" class="nav-link text-dark">Diodos</a>
-	                    <a href="" class="nav-link text-dark ml-4">Junção PN</a>
-	                    <a href="" class="nav-link text-dark ml-5">Diretamente polarizada</a>
-	                    <a href="" class="nav-link text-dark ml-5">Inversamente polarizada</a>
+	                    <a href="#condutividade" class="nav-link text-dark">Condutividade dos materiais</a>
+	                    <a href="#semicondutores" class="nav-link text-dark">Semicondutores</a>
+	                    <a href="#intrinseco" class="nav-link text-dark ml-4">Intrínseco</a>
+	                    <a href="#extrinseco" class="nav-link text-dark ml-4">Extrínseco</a>
+			    <a href="#tipoN" class="nav-link text-dark ml-5">Tipo N</a>
+			    <a href="#tipoP" class="nav-link text-dark ml-5">Tipo P</a>
+	                    <a href="#diodos" class="nav-link text-dark">Diodos</a>
+	                    <a href="#PN" class="nav-link text-dark ml-4">Junção PN</a>
+	                    <a href="#pDireta" class="nav-link text-dark ml-5">Diretamente polarizada</a>
+	                    <a href="#pInversa" class="nav-link text-dark ml-5">Inversamente polarizada</a>
+	                    <a href="#DiodoUtilidade" class="nav-link text-dark ml-4">Utilidade</a>
+	                    <a href="#LED" class="nav-link text-dark ml-5">LEDs</a>
+	                    <a href="#transistor" class="nav-link text-dark">Transistores</a>
+	                    <a href="#pFuncionamento" class="nav-link text-dark ml-4">Funcionamento</a>
 	                </div>
 	            </div>
 	        </div>
 	        <div class="col-md-1"></div>
 	        <div class="col-md-9 bg-light p-3" id="main">
-				<h1> pagina {{pag}}</h1>
-				<br>
-				<h2>Condutividade dos materiais</h2>
+				<h2 id="condutividade">Condutividade dos materiais</h2>
 				<br>
 				<p>É de conhecimento comum que a humanidade obteve grandes avanços tecnológicos ao descobrir uma maneira de "domar" a corrente elétrica, ou seja, conter e conduzir os elétrons livres como bem entender. Contudo, isso só foi possível graças a uma característica dos materiais: a condutividade e a resistividade.</p>
 				<p>Na verdade, a condutividade e a resistividade tratam da mesma propriedade, porém de pontos de vista diferentes. A condutividade mensura a facilidade dos elétrons livres fluírem por um material; e a resistividade mede quanta resistência o material apresenta a esse fluxo.</p>
@@ -50,53 +52,122 @@
 					<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
 				</ul>
 				</p>
-				<p>~~~Inserir imagem aqui~~~</p>
 				<br>
-				<h2>Semicondutores</h2>
+				<figure>
+					<img src="../static/images/condutividade.png" class="center">
+					<figcaption class="center">Fig.1 - Classificação dos materiais quanto à condutividade.</figcaption>
+				</figure>
 				<br>
-				<h3>Semicondutor intrínseco</h3>
+				<hr>
+				<h2 id="semicondutores">Semicondutores</h2>
+				<br>
+				<h3 id="intrinseco">Semicondutor intrínseco</h3>
 				<p>O semicondutor intrínseco é aquele que se encontra na forma pura, ou seja, atua sem a adição de nenhuma substância. Esse tipo de semicondutor é raramente utilizado.</p>
 				<p>Entre os semicondutores mais utilizados estão o germânio (Ge) e o silício (Si) e a análise dos semicondutores pode ser feita através de conceitos físicos (bandas de energia) ou conceitos químicos (ligações covalentes). Por motivos didáticos será abordado o silício através de conceitos químicos.</p>
 				<p>O silício possui 4 elétrons na camada de valência e é considerado neutro, pois o número de elétrons é igual ao número de prótons. Muitas vezes é utilizada a nomenclatura "cristal de silício", uma vez que ele forma uma estrutura geométrica cúbica: cada elétron da camada de valência se liga a um elétron da camada de valência de outro silício, estabelecendo uma simetria.</p>
 				<p>Por motivos de simplificação será representado apenas os elétrons da camada de valência.</p>
-				<p>~~~Inserir imagem aqui~~~</p>
+				<br>
+				<figure>
+					<img src="../static/images/estrutura.png" class="center" width="1200px">
+					<figcaption class="center">Fig.2 - Em (a) temos a representação completa da átomo, em (b) temos sua representação simplificada.</figcaption>
+				</figure>
+				<br>
+				<br>
 				<p>Na condição de semicondutor intrínseco o silício atua como um isolante, já que não possui elétrons livres; mas quando submetido a temperaturas elevadas pode ocorrer o rompimento de ligações covalentes, fazendo com que o elétron da camada de valência se torne um elétron livre e surja uma lacuna no local.</p>
 				<p>Os elétrons são considerados cargas negativas (-), e uma vez que as lacunas representam a ausência de elétrons são consideradas cargas positivas (+). Colocando o cristal de silício sob uma diferença de potencial (ddp) somos capazes de movimentar essas cargas.</p>
 				<p>A movimentação dos elétrons é algo conhecido: se direcionam ao polo positivo, região de maior potencial. Também é atribuído movimento as lacunas, embora a lacuna propriamente dita não altere sua posição. O que acontece é o preenchimento da primeira lacuna por um elétron livre e surgimento de uma nova lacuna no local de origem desse elétron, por isso é dito que o movimento das lacunas possui sentido contrário ao movimento dos elétrons.</p>
-				<p>~~~Inserir imagem aqui~~~</p>
 				<br>
-				<h3>Semicondutor extrínseco</h3>
+				<figure>
+					<img src="../static/images/movimento1.png" class="center">
+					<figcaption class="center">Fig.3 - Diagrama de movimento de lacunas e elétrons.</figcaption>
+				</figure>
+				<br>
+				<br>
+				<h3 id="extrinseco">Semicondutor extrínseco</h3>
 				<p>Os semicondutores extrínsecos são aqueles que possuem a adição de impurezas (átomos) com a finalidade de alterar sua resistividade. Há dois tipos de semicondutores extrínsecos: o tipo P e o tipo N.</p>
 				<br>
-				<h4>Semicondutor tipo N</h4>
+				<h4 id="tipoN">Semicondutor tipo N</h4>
 				<p>Ocorre quando é adicionado ao cristal um material pentavalente (5 elétrons na camada de valência), com o objetivo de tornar o material mais condutivo. Em geral, o material mais utilizado como impureza neste tipo é o fósforo (P).</p>
 				<p>Vamos considerar o silício como nosso cristal semicondutor. Considerando que um ou mais átomos de silício tenha sidos trocados por átomos de fósforo, por exemplo, e que a quantidade de átomos de silício seja significativamente maior que a quantidade de átomos de fósforo, todos os átomos de fósforo estabelecerão uma ligação covalente com um átomo de silício; o quinto elétron do fósforo se encontrará fora da estrutura, fracamente ligado ao átomo, bastando uma pequena quantidade de carga para que se separe e torne-se um elétron livre. Só ocorreria a garantia da permanência do quinto elétron ao fósforo em temperatura zero absoluto, o que não é um caso real; na prática, um breve aumento da temperatura já seria o suficiente para torná-lo livre.</p>
 				<p>Neste caso, devido à grande quantidade de elétrons, são denominados portadores majoritários; e as lacunas, portadores minoritários. Justamente por possuir uma grande quantidade de carga negativa que o semicondutor é denominado tipo N (negative).</p>
-				<p>~~~Inserir imagem aqui~~~</p>
 				<br>
-				<h4>Semicondutor tipo P</h4>
+				<figure>
+					<img src="../static/images/tipoN.png" class="center">
+					<figcaption class="center">Fig.4 - Aqui temos a transformação do quinto elétron de um átomo de fósforo em um elétron livre.</figcaption>
+				</figure>
+				<br>
+				<br>
+				<h4 id="tipoP">Semicondutor tipo P</h4>
 				<p>Ao contrário do que acontece com o semicondutor tipo N, no qual átomos são adicionados com o intuito de aumentar a condutividade, o objetivo é aumentar a quantidade de lacunas. Para isso, o cristal é dopado com impurezas trivalentes (3 elétrons na cama de valência). Neste caso, o mais comumente utilizado é o boro (B).</p>
 				<p>O átomo de boro só possui 3 elétrons para estabelecer uma ligação com os átomos de silício, porém, as ligações ainda sim são realizadas. O que ocorre é que a ausência de um elétron na ligação com o quarto silício atua como uma lacuna.</p>
 				<p>Com o aumento da temperatura, um elétron que já se encontra em uma ligação covalente ganha energia o suficiente para se tornar livre, e então se desloca para preencher a lacuna formada entre o boro e o quarto silício, formando uma nova lacuna em seu local de origem.</p>
 				<p>Nessa situação, as lacunas assumem o papel de portador majoritário e os elétrons de portadores minoritários. Lembrando que as lacunas representam uma carga positiva, nomeando assim o semicondutor como tipo P (positive).</p>
-				<p>~~~Inserir imagem aqui~~~</p>
+				<br>
+				<figure>
+					<img src="../static/images/tipoP.png" class="center">
+					<figcaption class="center">Fig.5 - Em (a) temos a demosntração de uma ligação feita com um átomo de Boro, que só possui 3 elétrons de valência, formando uma lacuna. Em (b) demonstramos que essa lacuna exerce um potencial, sendo preenchida por um elétron.</figcaption>
+				</figure>
 				<br><br>
-	<h2>Diodos</h2>
+				<hr>
+	<h2 id="diodos">Diodos</h2>
 	<p>O diodo é um componente elétrico construído a partir de uma junção PN, cujo o intuito é permitir a passagem da corrente elétrica apenas em um sentido de polarização. Vamos estudar melhor esse fenômeno.</p>
-	<h3>Junção PN</h3>
+	<h3 id="PN">Junção PN</h3>
 	<p>Ao combinarmos metalurgicamente um semicondutor tipo P com um semicondutor tipo N, formamos uma junção PN.</p>
 	<p>Quando as duas superfícies entram em contato, os elétrons livres do material tipo N deslocam-se para o material tipo P para preencher as lacunas, assim, haverá uma corrente de elétrons do N para o P, denominada corrente de difusão, e uma corrente de lacunas de P para N, denominada corrente de deriva. Esse fenômeno chama-se difusão</p>
 	<p>Entretanto, uma vez que os átomos na região de contato se estabilizem, surge uma região estacionária no local, denominada região de cargas espaciais (RCE) ou zona de depleção. Essa região atua como uma barreira de potencial, pois já não existe uma força atraindo os elétrons para as lacunas no local, fazendo com que a diferença de potencial entre os dois polos tenha que ser bem maior para que a força de atração seja suficientemente grande para superar essa barreira. Quando a junção está em equilíbrio, a soma das correntes de junção é nula.</p>
-	<p>~~~Inserir imagem aqui~~~</p>
 	<br>
-	<h4>Junção PN diretamente polarizada</h4>
+	<figure>
+		<img src="../static/images/PN.png" class="center">
+		<figcaption class="center">Fig.6 - Representação de uma junção PN com suas cargas e correntes.</figcaption>
+	</figure>
+	<br>
+	<br>
+	<h4 id="pDireta">Junção PN diretamente polarizada</h4>
 	<p>Ao ligar os polos positivos e negativos da junção com os respectivos polos de uma bateria, ocorre um aumento dos elétrons na junção N e o potencial da junção P é somado com o potencial do polo positivo da bateria, assim, a diferença de potencial se torna suficientemente grande para vencer a zona de depleção.</p>
 	<p>Quando uma junção PN é polarizada, surge uma nova corrente, a corrente de saturação. A corrente de saturação é formada pela ação da temperatura nos portadores minoritários de cada polo da junção. No caso da polarização direta, a corrente total é dada pela corrente de deriva menos a corrente de saturação.</p>
-	<p>~~~Inserir imagem aqui~~~</p>
 	<br>
-	<h4>Junção PN inversamente polarizada</h4>
+	<figure>
+		<img src="../static/images/pDireta.png" class="center">
+		<figcaption class="center">Fig.7 - Demonstração de uma junção PN diretamente polarizada. É possível notar o estreitamento da zona de depleção e aumento da diferença de potencial.</figcaption>
+	</figure>
+	<br>
+	<br>
+	<h4 id="pInversa">Junção PN inversamente polarizada</h4>
 	<p>Com a polarização reversa, o polo positivo da bateria irá atrair os elétrons da junção N ainda mais pra extremidade, e o polo negativo irá fazer a mesma coisa com as lacunas no polo N. Assim, a zona de depleção será aumentada, impedindo praticamente toda a passagem de corrente entre os polos. A única corrente presente será a mesma da junção PN diretamente polarizada, mas nesse caso ela recebe o nome de corrente reversa de saturação.</p>
-	<p>~~~Inserir imagem aqui~~~</p>
+	<br>
+	<figure>
+		<img src="../static/images/pInversa.png" class="center">
+		<figcaption class="center">Fig.8 - Demonstração de uma junção PN inversamente polarizada.</figcaption>
+	</figure>
+	<br> <br>
+	<h3 id="DiodoUtilidade">Utilidade</h3>
+	<p>Como foi dito, o diodo permite a passagem da corrente apenas em um sentido de polarização, com isso, ele se torna um poderoso componente de segurança, permitindo, por exemplo, que o seu controle não seja danificado caso as pilhas sejam inseridas no sentido errado. Além disso, é um componente importantíssimo na composição de circuitos retificadores (circuitos responsável pela conversão de corrente alternada em corrente contínua); sem eles não seria possível alimentar os aparelhos eletrônicos que nós utilizamos. Está presente também em circuitos limitadores de tensão.</p>
+	<p>Em circuitos eletrônicos o diodo é representado através do seguinte símbolo: </p>
+	<figure>
+		<img src="../static/images/reprDiodo.png" class="center" style="width:35%;">
+		<figcaption class="center">Fig.9 - Representação eletrônica de um diodo. O termo ânodo refere-se ao polo positivo, e o termo cátodo ao polo negativo.</figcaption>
+	</figure>
+	<br> <br>
+	<h2 id="LED">LEDs</h2>
+	<p>LED é uma abreviação de Light Emitting Diode, e consiste basicamente em um diodo com cristal, impurezas e encapsulamento especiais para se aproveitar dos fótons emitidos nas transições dos elétrons. Seu funcionamento baseia-se no princípio da conversão luminescente. As cores emitidas dependem do material utilizado (o comprimento de onda formado por eles), que pode ser observado na imagem a seguir:</p>
+	<figure>
+		<img src="../static/images/LED.png" class="center">
+		<figcaption class="center">Fig.10 - Relação material-cor para a formação de luz em um LED.</figcaption>
+	</figure>
+	<br> <br>
+	<p>É importante citar que os LEDs possuem uma representação parecida (mas diferente) em circuitos eletrônicos: </p>
+	<figure>
+		<img src="../static/images/reprLED.png" class="center" style="width:35%;">
+		<figcaption class="center">Fig.11 - Representação eletrônica de um LED.</figcaption>
+	</figure>
+	<br> <br>
+	<hr>
+	<h2 id="transistor">Transistores</h2>
+	<p>Em suma, um diodo possui apenas dois estados: grande resistência a corrente e pouca resistência a corrente. Entretanto, através dos transistores podemos ter resistência variáveis em nossos circuitos. Mas antes disso, vamos explicar o que é um transistor.</p>
+	<p>Transistor é um uma sigla para transfer resistor, ou seja, um resistor de transferência. Existem dois tipos de transistores, os transistores bipolares (BJT - Transistor Bipolar de Junção) e os transistores unipolares (UJT - Transistor de Unijunção). Serão tratados apenas a matéria referente ao transistor bipolar, uma vez que os unipolares constituem um tópico mais avançado. A partir desse momento os transistores BJT serão tratados apenas como transistors.</p>
+	<p>Um transistor consiste basicamente de um triodo: um diodo com mais uma junção e mais um terminal. De acordo com as junções um transistor pode ser NPN e PNP; porém, será utilizado como base para a explicação apenas o tipo NPN, já que é o mais utilizado e o PNP apresenta o exato mesmo funcionamento, tendo apenas o sentido inverso das correntes.</p>
+	<br>
+	<h3 id="pFuncionamento">Princípio de funcionamento</h3>
 
 			</div>
 		</div>
