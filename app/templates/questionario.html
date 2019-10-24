@@ -1,0 +1,106 @@
+{% extends "molde.html" %}
+
+{% block content %}
+
+<div>
+	<form action="" method="POST" >
+		<p class="quest">É correto afirmar que a condutividade é diretamente proporcional à resistividade.</p>
+		<input type="radio" name="prim" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="prim" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[0]}} </p>
+		{% endif %}
+		<br>
+		<br>
+		<p class="quest">Semicondutores podem assumir o comportamento de condutores ou isolantes por não apresentarem uma banda proibida</p>
+		<input type="radio" name="seg" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="seg" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[1]}} </p>
+		{% endif %}
+
+			<br>
+		<br>
+		<p class="quest"> Embora seja atribuido movimento às lacunas, o elétron é a particula que realmente se movimenta</p>
+		<input type="radio" name="ter" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="ter" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[2]}} </p>
+		{% endif %}
+		<br>
+		<br>
+		<p class="quest">O material da dopagem não altera as propriedades do semicondutor </p>
+	<input type="radio" name="quar" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="quar" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[3]}} </p>
+		{% endif %}
+		<br>
+		<br>
+		<p class="quest"> A junção de dois semicondutores intrínscecos também forma uma junção PN </p>
+
+		<input type="radio" name="quin" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="quin" id="2" value="0"> Falso </input>
+			{%if cor %}
+			<p> {{cor[4]}} </p>
+		{% endif %}
+		<br>
+			<br>
+		<p class="quest">Semicondutores têm sua capacidade condutiva aumentada quando aplicado calor</p>
+		<input type="radio" name="sex" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="sex" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[5]}} </p>
+		{% endif %}
+		<br>
+				<br>
+		<p class="quest"> Um transistor pode ser utilizado como um diodo através da junção base-emissor </p>
+		<input type="radio" name="set" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="set" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[6]}} </p>
+		{% endif %}
+		<br>
+			<br>
+		<p class="quest"> É possível acionar o funcionamento de um motor através de um transistor </p>
+		<input type="radio" name="oit" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="oit" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[7]}} </p>
+		{% endif %}
+		<br>
+			<br>
+		<p class="quest">Não é possível utilizar um LED como um diodo</p>
+		<input type="radio" name="nin" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="nin" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[8]}} </p>
+		{% endif %}
+		<br>
+			<br>
+		<p class="quest">Em 0 Kelvin, semicondutores apresentam sua banda de condução totalmente cheia</p>
+		<input type="radio" name="dez" id="1" value="1"> Verdadeiro </input>
+		<br>
+		<input type="radio" name="dez" id="2" value="0"> Falso </input>
+		{%if cor %}
+			<p> {{cor[9]}} </p>
+		{% endif %}
+		<br>
+			<br>
+
+
+		<p> <button type="submit" formmethod="post"> Enviar respostas </p>
+	</form>
+	</div>
+
+	<p align="center" id="resp">Acertou {{perg}} questões ou {{percent}} %</p>
+{% endblock %}
