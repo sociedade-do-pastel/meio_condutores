@@ -78,11 +78,17 @@
 				<p>A movimentação dos elétrons é algo conhecido: se direcionam ao polo positivo, região de maior potencial. Também é atribuído movimento as lacunas, embora a lacuna propriamente dita não altere sua posição. O que acontece é o preenchimento da primeira lacuna por um elétron livre e surgimento de uma nova lacuna no local de origem desse elétron, por isso é dito que o movimento das lacunas possui sentido contrário ao movimento dos elétrons.</p>
 				<br>
 				<figure>
-					<img src="../static/images/movimento1.png" class="center">
+					<img src="../static/images/movimento1.gif" class="center">
 					<figcaption class="center">Fig.3 - Diagrama de movimento de lacunas e elétrons.</figcaption>
 				</figure>
 				<br>
 				<br>
+				<p>Vale ressaltar que existe uma confusão em relação ao sentido da corrente, isso porque elas podem ser observadas de duas formas: o sentido real da corrente e o sentido convencional da corrente:</p>
+				<ul>
+					<li>O sentido real da corrente é aquele que acompanha o sentido dos elétrons.</li>
+					<li>O sentido convencional é o que normalmente utilizamos: parte do polo positivo de uma bateria para o negativo, por exemplo; isso acontece porque ele retrata o sentido do campo elétrico e não dos elétrons, que por sua vez é o mesmo sentido das lacunas.</li>
+				</ul>
+
 				<h3 id="extrinseco">Semicondutor extrínseco</h3>
 				<p>Os semicondutores extrínsecos são aqueles que possuem a adição de impurezas (átomos) com a finalidade de alterar sua resistividade. Há dois tipos de semicondutores extrínsecos: o tipo P e o tipo N.</p>
 				<br>
@@ -168,7 +174,50 @@
 	<p>Um transistor consiste basicamente de um triodo: um diodo com mais uma junção e mais um terminal. De acordo com as junções um transistor pode ser NPN e PNP; porém, será utilizado como base para a explicação apenas o tipo NPN, já que é o mais utilizado e o PNP apresenta o exato mesmo funcionamento, tendo apenas o sentido inverso das correntes.</p>
 	<br>
 	<h3 id="pFuncionamento">Princípio de funcionamento</h3>
+	<p>O transistor é formado a partir de uma junção não-simétrica de 3 materiais dopados, na forma de um "sanduíche". O fato de conter 3 materiais dopados resulta no surgimento de 2 zonas de depleção. As características das 3 regiões são: </p>
+	<ul>
+		<li>A região central é denominada base e é a região mais fina e com menor concentração de impurezas.</li>
+		<li>O emissor é um dos extremos, na representação eletrônica é o lado que possui uma seta, e é a região mais dopada.</li>
+		<li>O coletor é a maior região pois é nele em que se destinam e concentram os elétrons.</li>
+	</ul>
+	<figure>
+		<img src="../static/images/reprTransistor.png" class="center">
+		<figcaption class="center">Fig 12. Composição de um transistor e suas representações eletrônicas.</figurecaption>
+	</figure>
+	<br> <br>
+	<p>O ponto chave de um transistor é que se a junção base-emissor for polarizada diretamente e a junção do coletor inversamente a corrente do emissor e coletor serão altas. Para entender esse fenômeno vamos primeiro analisar a junção base-emissor: os elétrons se detinam para base e, como a base é uma região estreita e pouco dopada, os elétrons lotam a região central e assim atingem a zona de depleção base-coletor. Quando os elétrons atingem a junção base-coletor o efeito do campo elétrico na região e a polarização reversa da região garantem que esses elétrons ultrapassem a barreia e dirijam-se ao polo coletor. Apenas uma pequena parte se destina ao polo da base.</p>
+	<p>Para cada terminal é atribuida uma corrente: Ic para corrente de coletor; Ib para corrente de base e Ie para corrente de emissor. Essas correntes são representadas no sentido convencional da corrente, assim como ilustra a figura a seguir:</p>
+	<figure>
+		<img src="../static/images/esquemaTransistor.png" class="center">
+		<figcaption class="center">Fig 13. Ação das cargas e movimento das correntes de um transistor.</figcaption>
+	</figure>
+	<br> <br>
+	<p>Para calcular a corrente de emissor utiliza-se a primeira lei de Kirchhoff (também conhecido como lei dos nós), onde a soma das correntes de saída é equivalente a soma das corrente incidentes. Portanto:</p>
+	<br>
+	<p>$$Ie = Ib + Ic$$</p>
+	<br>
+	<p>A corrente de base é centenas de vezes menor que a corrente de emissor e coletor, então é possível dizer que a corrente de emissor é aproximadamente igual a corrente de coletor (Ie \(\approx\) Ic).</p>
+	<p>A corrente que parte do coletor ao emissor é controlada pela concentração de portadores majoritários na base, ou seja, pela corrente de base; assim, é possível dizer que a corrente de base controla a resistência do transistor. A corrente do coletor possui uma proporção em relação a base de x-vezes maior, essa proporção é denominada ganho \(\beta\), e caracteriza o transistor como um componente amplificador.</p>
+	<p>$$\beta = {Ic \over Ib}$$</p>
+	<p>Há ainda uma proporção entre a corrente de coletor e emissor, denominada de ganho \(\alpha\).</p>
+	<p>$$\alpha = {Ic \over Ie}$$</p>
+	<p>Note que por se tratarem de uma proporção não possuem unidade, e o ganho \(\beta\) consiste em um valor na casa das centenas e o ganho \(\alpha\) um valor muito pequeno, normalmente menor que 1.</p>
+	<p>Note também que se a corrente de base for 0 a corrente de coletor também é 0, portanto é possível utilizar o transistor como uma chave eletrônica.</p>
+	<p>É possível deduzir os valores de \(\alpha\) através do valor de \(\beta\) e vice-versa através das fórmulas:</p>
+	<p>$$\beta = {\alpha \over \alpha - 1}$$ $$\alpha = {\beta \over \beta - \beta}$$</p>
+	<p>Quanto às tensões em um transistor, acontece entre os terminais dessa forma: </p>
+	<figure>
+		<img src="../static/images/tensoesTransistor.png" class="center">
+		<figcaption class="center">Fig 14. Representação dos sentidos das tensões.</figcaption>
+	</figure>
+	<br> <br>
+	<p>E é dado pela fórmula: </p>
+	<p>$$Vce = Vbe + Vcb$$</p>
+	<p>No caso dos transistores PNP utiliza-se a mesma fórmula, porém, o sentido das tensões é invertivo devido ao sentido invertido das corrente, assim, inverte-se também a notação: usa-se Vec, Veb e Vbc.</p>
+	<hr>
+	<h2>Referências</h2>
 
+	
 			</div>
 		</div>
 	</div>
