@@ -33,7 +33,7 @@ class QuestionarioForm(FlaskForm):
 def index():
     #return "pagina principal"
     pag = "principal"
-    return render_template('index.html', title='Principal', pag=pag)
+    return app.send_static_file('index.html')
 
 @app.route("/semicondutores")
 def semi():
