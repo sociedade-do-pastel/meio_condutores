@@ -21,100 +21,125 @@
 	                    <a href="#LED" class="nav-link text-dark ml-5">LEDs</a>
 	                    <a href="#transistor" class="nav-link text-dark">Transistores</a>
 	                    <a href="#pFuncionamento" class="nav-link text-dark ml-4">Funcionamento</a>
+	                    <a href="#compu" class="nav-link text-dark">Transistores na computação</a>
+	                    <a href="#not" class="nav-link text-dark ml-4">Porta NOT</a>
+	                    <a href="#and" class="nav-link text-dark ml-4">Porta AND</a>
+	                    <a href="#or" class="nav-link text-dark ml-4">Porta OR</a>
+	                    <a href="#referencias" class="nav-link text-dark">Referências</a>
 	                </div>
 	            </div>
 	        </div>
 	        <div class="col-md-1"></div>
 	        <div class="col-md-9 bg-light p-3" id="main">
-				<h2 id="condutividade">Condutividade dos materiais</h2>
-				<br>
-				<p>É de conhecimento comum que a humanidade obteve grandes avanços tecnológicos ao descobrir uma maneira de "domar" a corrente elétrica, ou seja, conter e conduzir os elétrons livres como bem entender. Contudo, isso só foi possível graças a uma característica dos materiais: a condutividade e a resistividade.</p>
-				<p>Na verdade, a condutividade e a resistividade tratam da mesma propriedade, porém de pontos de vista diferentes. A condutividade mensura a facilidade dos elétrons livres fluírem por um material; e a resistividade mede quanta resistência o material apresenta a esse fluxo.</p>
-				<p>De acordo com essas grandezas os materiais podem ser classificados em 3 tipos:</p>
-				<ul>
-					<li>Condutores: Apresentam grande facilidade na condução de corrente elétrica (ou pouca resistência). </li>
-					<li>Isolantes: Possuem grande resistência à corrente elétrica (ou pouca facilidade na condução).
-					<li>Semicondutores: Também conhecidos como semi-isolantes (porém essa nomenclatura é pouco utilizada) são materiais que se encontram no meio dos condutores e isolantes, podendo assumir as propriedades de qualquer um dos dois dependendo da situação em que são submetidos. Graças a essa peculiaridade que foram desenvolvidos os circuitos integrados e os computadores.</li>
-				</ul>
-				<p>A resistividade elétrica, representada pela letra grega rho (\(\rho\)), consiste em uma constante medida em ohm metro (\(\varOmega\)m) e é definida pelo material. Entretanto, por estar diretamente relacionado com a resistência elétrica (R) é capaz de obtê-la através da fórmula:
-				$$\rho = {AR \over L}$$
-				<ul style="list-style-type:none;">
-					<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
-					<li>R = resistência elétrica [\(\varOmega\)]</li>
-					<li>A = área [m²]</li>
-					<li>L = comprimento [m]</li>
-				</ul>
-				</p>
-				<p>A condutividade elétrica, representada pela letra grega sigma (\(\sigma\)), é medida em siemens por metro (S/m) e é definida pela fórmula:
-				$$\sigma = {1 \over \rho}$$
-				<ul style="list-style-type:none;">
-					<li>\(\sigma\) = condutividade elétrica [S/m]
-					<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
-				</ul>
-				</p>
-				<br>
-				<figure>
-					<img src="../static/images/condutividade.png" class="center">
-					<figcaption class="center">Fig.1 - Classificação dos materiais quanto à condutividade.</figcaption>
-				</figure>
-				<br>
-				<hr>
-				<h2 id="semicondutores">Semicondutores</h2>
-				<br>
-				<h3 id="intrinseco">Semicondutor intrínseco</h3>
-				<p>O semicondutor intrínseco é aquele que se encontra na forma pura, ou seja, atua sem a adição de nenhuma substância. Esse tipo de semicondutor é raramente utilizado.</p>
-				<p>Entre os semicondutores mais utilizados estão o germânio (Ge) e o silício (Si) e a análise dos semicondutores pode ser feita através de conceitos físicos (bandas de energia) ou conceitos químicos (ligações covalentes). Por motivos didáticos será abordado o silício através de conceitos químicos.</p>
-				<p>O silício possui 4 elétrons na camada de valência e é considerado neutro, pois o número de elétrons é igual ao número de prótons. Muitas vezes é utilizada a nomenclatura "cristal de silício", uma vez que ele forma uma estrutura geométrica cúbica: cada elétron da camada de valência se liga a um elétron da camada de valência de outro silício, estabelecendo uma simetria.</p>
-				<p>Por motivos de simplificação será representado apenas os elétrons da camada de valência.</p>
-				<br>
-				<figure>
-					<img src="../static/images/estrutura.png" class="center" width="1200px">
-					<figcaption class="center">Fig.2 - Em (a) temos a representação completa da átomo, em (b) temos sua representação simplificada.</figcaption>
-				</figure>
-				<br>
-				<br>
-				<p>Na condição de semicondutor intrínseco o silício atua como um isolante, já que não possui elétrons livres; mas quando submetido a temperaturas elevadas pode ocorrer o rompimento de ligações covalentes, fazendo com que o elétron da camada de valência se torne um elétron livre e surja uma lacuna no local.</p>
-				<p>Os elétrons são considerados cargas negativas (-), e uma vez que as lacunas representam a ausência de elétrons são consideradas cargas positivas (+). Colocando o cristal de silício sob uma diferença de potencial (ddp) somos capazes de movimentar essas cargas.</p>
-				<p>A movimentação dos elétrons é algo conhecido: se direcionam ao polo positivo, região de maior potencial. Também é atribuído movimento as lacunas, embora a lacuna propriamente dita não altere sua posição. O que acontece é o preenchimento da primeira lacuna por um elétron livre e surgimento de uma nova lacuna no local de origem desse elétron, por isso é dito que o movimento das lacunas possui sentido contrário ao movimento dos elétrons.</p>
-				<br>
-				<figure>
-					<img src="../static/images/movimento1.gif" class="center">
-					<figcaption class="center">Fig.3 - Diagrama de movimento de lacunas e elétrons.</figcaption>
-				</figure>
-				<br>
-				<br>
-				<p>Vale ressaltar que existe uma confusão em relação ao sentido da corrente, isso porque elas podem ser observadas de duas formas: o sentido real da corrente e o sentido convencional da corrente:</p>
-				<ul>
-					<li>O sentido real da corrente é aquele que acompanha o sentido dos elétrons.</li>
-					<li>O sentido convencional é o que normalmente utilizamos: parte do polo positivo de uma bateria para o negativo, por exemplo; isso acontece porque ele retrata o sentido do campo elétrico e não dos elétrons, que por sua vez é o mesmo sentido das lacunas.</li>
-				</ul>
+		<h2 id="condutividade">Condutividade dos materiais</h2>
+		<br>
+		<p>É de conhecimento comum que a humanidade obteve grandes avanços tecnológicos ao descobrir uma maneira de "domar" a corrente elétrica, ou seja, conter e conduzir os elétrons livres como bem entender. Contudo, isso só foi possível graças a uma característica dos materiais: a condutividade e a resistividade.</p>
+		<p>Na verdade, a condutividade e a resistividade tratam da mesma propriedade, porém de pontos de vista diferentes. A condutividade mensura a facilidade dos elétrons livres fluírem por um material; e a resistividade mede quanta resistência o material apresenta a esse fluxo.</p>
+		<p>De acordo com essas grandezas os materiais podem ser classificados em 3 tipos:</p>
+		<ul>
+				<li>Condutores: Apresentam grande facilidade na condução de corrente elétrica (ou pouca resistência). </li>
+				<li>Isolantes: Possuem grande resistência à corrente elétrica (ou pouca facilidade na condução).</li>
+				<li>Semicondutores: Também conhecidos como semi-isolantes (porém essa nomenclatura é pouco utilizada) são materiais que se encontram no meio dos condutores e isolantes, podendo assumir as propriedades de qualquer um dos dois dependendo da situação em que são submetidos. Graças a essa peculiaridade que foram desenvolvidos os circuitos integrados e os computadores.</li>
+			</ul>
+			<p>A resistividade elétrica, representada pela letra grega rho (\(\rho\)), consiste em uma constante medida em ohm metro (\(\varOmega\)m) e é definida pelo material. Entretanto, por estar diretamente relacionado com a resistência elétrica (R) é capaz de obtê-la através da fórmula:
+			$$\rho = {AR \over L}$$
+			<ul style="list-style-type:none;">
+				<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
+				<li>R = resistência elétrica [\(\varOmega\)]</li>
+				<li>A = área [m²]</li>
+				<li>L = comprimento [m]</li>
+			</ul>
+			</p>
+			<p>A condutividade elétrica, representada pela letra grega sigma (\(\sigma\)), é medida em siemens por metro (S/m) e é definida pela fórmula:
+			$$\sigma = {1 \over \rho}$$
+			<ul style="list-style-type:none;">
+				<li>\(\sigma\) = condutividade elétrica [S/m]
+				<li>\(\rho\) = resistividade elétrica [\(\varOmega\)m]
+			</ul>
+			</p>
+			<br>
+			<figure>
+				<img src="../static/images/condutividade.png" class="center">
+				<figcaption class="center">Fig.1 - Classificação dos materiais quanto à condutividade.</figcaption>
+			</figure>
+			<br> <br>
+			<p>Agora que entendemos o que são materiais isolantes e condutores, precisamos entender o que torna, atomicamente, um material condutor ou não.</p>
+			<p>Com o estudo dos átomos de hidrogênio nós aprendemos que os elétrons não podem assumir qualquer nível (n) de energia. Assim, o físico suíço Felix Bloch aplicou o mesmo conceito em cristais (sólidos cujos átomos são uniformes em identidade e posicionamento), e percebeu que ao aproximar diversos átomos uniformemente a interação entre eles causa uma alteração em suas formas de onda. Em específico, os níveis de energia se superpõem, cada um assumindo um valor bem próximo e definido em relação ao outro; os níveis de energia se tornam tão próximos que suas divisas deixam de ser notáveis, formando uma faixa, o que denominamos de banda de energia.</p>
+			<figure>
+				<img src="../static/images/bandas.png" class="center" style="width:50%;">
+				<figcaption class="center">Fig.2 - Gráfico que demonstra a aproximação das formas de onda, formando as bandas de energia.</figcaption>
+			</figure>
+			<br><br>
+			<p>Nota que entre as bandas de energia há lacunas, essas lacunas são denominadas bandas proibidas (justamente pelo fato de ser impossível a presença de níveis de energia nelas) ou gap, em inglês. Note também que a banda de energia mais elevada, formada por elétrons na camada de valência, são denominadas bandas de valência. Há ainda uma banda muito importante, a banda de condução, essa banda seria a banda seguinte da banda de valência.</p>
+			<p>O que define a condutividade dos materiais seria exatamente as bandas de condução e proibida. Sendo assim: </p>
+		<ul>
+				<li>Condutores: A banda de condução está parcialmente preenchida mesmo no estado de zero absoluto, onde não pode ocorrer ganho de energia térmico.</li>
+				<li>Isolantes: Não há elétrons na banda de condução e a banda proibida é muito larga, fazendo com que o ganho de energia tenha que ser muito grande para que os elétrons da banda de valência alcancem a banda de condução.</li>
+				<li>Semicondutores: Similar ao isolante, a banda de condução não possui elétrons, porém, a banda proibida é muito estreita, fazendo com que uma pequena força já baste para transitar um elétron da camada de valência para a camada de condução (como a própria energia térmica, por exemplo).</li>
+			</ul>
+			<figure>
+				<img src="../static/images/bandasCondutividade.png" class="center">
+				<figcaption class="center">Fig.3 - Preenchimento das bandas de energia de acordo com cada estrutura..</figcaption>
+			</figure>
+			<br><br>
 
-				<h3 id="extrinseco">Semicondutor extrínseco</h3>
-				<p>Os semicondutores extrínsecos são aqueles que possuem a adição de impurezas (átomos) com a finalidade de alterar sua resistividade. Há dois tipos de semicondutores extrínsecos: o tipo P e o tipo N.</p>
-				<br>
-				<h4 id="tipoN">Semicondutor tipo N</h4>
-				<p>Ocorre quando é adicionado ao cristal um material pentavalente (5 elétrons na camada de valência), com o objetivo de tornar o material mais condutivo. Em geral, o material mais utilizado como impureza neste tipo é o fósforo (P).</p>
-				<p>Vamos considerar o silício como nosso cristal semicondutor. Considerando que um ou mais átomos de silício tenha sidos trocados por átomos de fósforo, por exemplo, e que a quantidade de átomos de silício seja significativamente maior que a quantidade de átomos de fósforo, todos os átomos de fósforo estabelecerão uma ligação covalente com um átomo de silício; o quinto elétron do fósforo se encontrará fora da estrutura, fracamente ligado ao átomo, bastando uma pequena quantidade de carga para que se separe e torne-se um elétron livre. Só ocorreria a garantia da permanência do quinto elétron ao fósforo em temperatura zero absoluto, o que não é um caso real; na prática, um breve aumento da temperatura já seria o suficiente para torná-lo livre.</p>
-				<p>Neste caso, devido à grande quantidade de elétrons, são denominados portadores majoritários; e as lacunas, portadores minoritários. Justamente por possuir uma grande quantidade de carga negativa que o semicondutor é denominado tipo N (negative).</p>
-				<br>
-				<figure>
-					<img src="../static/images/tipoN.png" class="center">
-					<figcaption class="center">Fig.4 - Aqui temos a transformação do quinto elétron de um átomo de fósforo em um elétron livre.</figcaption>
-				</figure>
-				<br>
-				<br>
-				<h4 id="tipoP">Semicondutor tipo P</h4>
-				<p>Ao contrário do que acontece com o semicondutor tipo N, no qual átomos são adicionados com o intuito de aumentar a condutividade, o objetivo é aumentar a quantidade de lacunas. Para isso, o cristal é dopado com impurezas trivalentes (3 elétrons na cama de valência). Neste caso, o mais comumente utilizado é o boro (B).</p>
-				<p>O átomo de boro só possui 3 elétrons para estabelecer uma ligação com os átomos de silício, porém, as ligações ainda sim são realizadas. O que ocorre é que a ausência de um elétron na ligação com o quarto silício atua como uma lacuna.</p>
-				<p>Com o aumento da temperatura, um elétron que já se encontra em uma ligação covalente ganha energia o suficiente para se tornar livre, e então se desloca para preencher a lacuna formada entre o boro e o quarto silício, formando uma nova lacuna em seu local de origem.</p>
-				<p>Nessa situação, as lacunas assumem o papel de portador majoritário e os elétrons de portadores minoritários. Lembrando que as lacunas representam uma carga positiva, nomeando assim o semicondutor como tipo P (positive).</p>
-				<br>
-				<figure>
-					<img src="../static/images/tipoP.png" class="center">
-					<figcaption class="center">Fig.5 - Em (a) temos a demosntração de uma ligação feita com um átomo de Boro, que só possui 3 elétrons de valência, formando uma lacuna. Em (b) demonstramos que essa lacuna exerce um potencial, sendo preenchida por um elétron.</figcaption>
-				</figure>
-				<br><br>
-				<hr>
+			<hr>
+			<h2 id="semicondutores">Semicondutores</h2>
+			<br>
+			<h3 id="intrinseco">Semicondutor intrínseco</h3>
+			<p>O semicondutor intrínseco é aquele que se encontra na forma pura, ou seja, atua sem a adição de nenhuma substância. Esse tipo de semicondutor é raramente utilizado.</p>
+			<p>Entre os semicondutores mais utilizados estão o germânio (Ge) e o silício (Si) e a análise dos semicondutores pode ser feita através de conceitos físicos (bandas de energia) ou conceitos químicos (ligações covalentes). Por motivos didáticos será abordado o silício através de conceitos químicos.</p>
+			<p>O silício possui 4 elétrons na camada de valência e é considerado neutro, pois o número de elétrons é igual ao número de prótons. Muitas vezes é utilizada a nomenclatura "cristal de silício", uma vez que ele forma uma estrutura geométrica cúbica: cada elétron da camada de valência se liga a um elétron da camada de valência de outro silício, estabelecendo uma simetria.</p>
+			<p>Por motivos de simplificação será representado apenas os elétrons da camada de valência.</p>
+			<br>
+			<figure>
+				<img src="../static/images/estrutura.png" class="center" width="1200px">
+				<figcaption class="center">Fig.4 - Em (a) temos a representação completa da átomo, em (b) temos sua representação simplificada.</figcaption>
+			</figure>
+			<br>
+			<br>
+			<p>Na condição de semicondutor intrínseco o silício atua como um isolante, já que não possui elétrons livres; mas quando submetido a temperaturas elevadas pode ocorrer o rompimento de ligações covalentes, fazendo com que o elétron da camada de valência se torne um elétron livre e surja uma lacuna no local.</p>
+			<p>Os elétrons são considerados cargas negativas (-), e uma vez que as lacunas representam a ausência de elétrons são consideradas cargas positivas (+). Colocando o cristal de silício sob uma diferença de potencial (ddp) somos capazes de movimentar essas cargas.</p>
+			<p>A movimentação dos elétrons é algo conhecido: se direcionam ao polo positivo, região de maior potencial. Também é atribuído movimento as lacunas, embora a lacuna propriamente dita não altere sua posição. O que acontece é o preenchimento da primeira lacuna por um elétron livre e surgimento de uma nova lacuna no local de origem desse elétron, por isso é dito que o movimento das lacunas possui sentido contrário ao movimento dos elétrons.</p>
+			<br>
+			<figure>
+				<img src="../static/images/movimento1.gif" class="center">
+				<figcaption class="center">Fig.5 - Diagrama de movimento de lacunas e elétrons.</figcaption>
+			</figure>
+			<br>
+			<br>
+			<p>Vale ressaltar que existe uma confusão em relação ao sentido da corrente, isso porque elas podem ser observadas de duas formas: o sentido real da corrente e o sentido convencional da corrente:</p>
+			<ul>
+				<li>O sentido real da corrente é aquele que acompanha o sentido dos elétrons.</li>
+				<li>O sentido convencional é o que normalmente utilizamos: parte do polo positivo de uma bateria para o negativo, por exemplo; isso acontece porque ele retrata o sentido do campo elétrico e não dos elétrons, que por sua vez é o mesmo sentido das lacunas.</li>
+			</ul>
+
+			<h3 id="extrinseco">Semicondutor extrínseco</h3>
+			<p>Os semicondutores extrínsecos são aqueles que possuem a adição de impurezas (átomos) com a finalidade de alterar sua resistividade. Há dois tipos de semicondutores extrínsecos: o tipo P e o tipo N.</p>
+			<br>
+			<h4 id="tipoN">Semicondutor tipo N</h4>
+			<p>Ocorre quando é adicionado ao cristal um material pentavalente (5 elétrons na camada de valência), com o objetivo de tornar o material mais condutivo. Em geral, o material mais utilizado como impureza neste tipo é o fósforo (P).</p>
+			<p>Vamos considerar o silício como nosso cristal semicondutor. Considerando que um ou mais átomos de silício tenha sidos trocados por átomos de fósforo, por exemplo, e que a quantidade de átomos de silício seja significativamente maior que a quantidade de átomos de fósforo, todos os átomos de fósforo estabelecerão uma ligação covalente com um átomo de silício; o quinto elétron do fósforo se encontrará fora da estrutura, fracamente ligado ao átomo, bastando uma pequena quantidade de carga para que se separe e torne-se um elétron livre. Só ocorreria a garantia da permanência do quinto elétron ao fósforo em temperatura zero absoluto, o que não é um caso real; na prática, um breve aumento da temperatura já seria o suficiente para torná-lo livre.</p>
+			<p>Neste caso, devido à grande quantidade de elétrons, são denominados portadores majoritários; e as lacunas, portadores minoritários. Justamente por possuir uma grande quantidade de carga negativa que o semicondutor é denominado tipo N (negative).</p>
+			<br>
+			<figure>
+				<img src="../static/images/tipoN.png" class="center">
+				<figcaption class="center">Fig.6 - Aqui temos a transformação do quinto elétron de um átomo de fósforo em um elétron livre.</figcaption>
+			</figure>
+			<br>
+			<br>
+			<h4 id="tipoP">Semicondutor tipo P</h4>
+			<p>Ao contrário do que acontece com o semicondutor tipo N, no qual átomos são adicionados com o intuito de aumentar a condutividade, o objetivo é aumentar a quantidade de lacunas. Para isso, o cristal é dopado com impurezas trivalentes (3 elétrons na cama de valência). Neste caso, o mais comumente utilizado é o boro (B).</p>
+			<p>O átomo de boro só possui 3 elétrons para estabelecer uma ligação com os átomos de silício, porém, as ligações ainda sim são realizadas. O que ocorre é que a ausência de um elétron na ligação com o quarto silício atua como uma lacuna.</p>
+			<p>Com o aumento da temperatura, um elétron que já se encontra em uma ligação covalente ganha energia o suficiente para se tornar livre, e então se desloca para preencher a lacuna formada entre o boro e o quarto silício, formando uma nova lacuna em seu local de origem.</p>
+			<p>Nessa situação, as lacunas assumem o papel de portador majoritário e os elétrons de portadores minoritários. Lembrando que as lacunas representam uma carga positiva, nomeando assim o semicondutor como tipo P (positive).</p>
+			<br>
+			<figure>
+				<img src="../static/images/tipoP.png" class="center">
+				<figcaption class="center">Fig.7 - Em (a) temos a demosntração de uma ligação feita com um átomo de Boro, que só possui 3 elétrons de valência, formando uma lacuna. Em (b) demonstramos que essa lacuna exerce um potencial, sendo preenchida por um elétron.</figcaption>
+			</figure>
+			<br><br>
+			<hr>
 	<h2 id="diodos">Diodos</h2>
 	<p>O diodo é um componente elétrico construído a partir de uma junção PN, cujo o intuito é permitir a passagem da corrente elétrica apenas em um sentido de polarização. Vamos estudar melhor esse fenômeno.</p>
 	<h3 id="PN">Junção PN</h3>
@@ -124,7 +149,7 @@
 	<br>
 	<figure>
 		<img src="../static/images/PN.png" class="center">
-		<figcaption class="center">Fig.6 - Representação de uma junção PN com suas cargas e correntes.</figcaption>
+		<figcaption class="center">Fig.8 - Representação de uma junção PN com suas cargas e correntes.</figcaption>
 	</figure>
 	<br>
 	<br>
@@ -134,7 +159,7 @@
 	<br>
 	<figure>
 		<img src="../static/images/pDireta.png" class="center">
-		<figcaption class="center">Fig.7 - Demonstração de uma junção PN diretamente polarizada. É possível notar o estreitamento da zona de depleção e aumento da diferença de potencial.</figcaption>
+		<figcaption class="center">Fig.9 - Demonstração de uma junção PN diretamente polarizada. É possível notar o estreitamento da zona de depleção e aumento da diferença de potencial.</figcaption>
 	</figure>
 	<br>
 	<br>
@@ -143,7 +168,7 @@
 	<br>
 	<figure>
 		<img src="../static/images/pInversa.png" class="center">
-		<figcaption class="center">Fig.8 - Demonstração de uma junção PN inversamente polarizada.</figcaption>
+		<figcaption class="center">Fig.10 - Demonstração de uma junção PN inversamente polarizada.</figcaption>
 	</figure>
 	<br> <br>
 	<h3 id="DiodoUtilidade">Utilidade</h3>
@@ -151,20 +176,20 @@
 	<p>Em circuitos eletrônicos o diodo é representado através do seguinte símbolo: </p>
 	<figure>
 		<img src="../static/images/reprDiodo.png" class="center" style="width:35%;">
-		<figcaption class="center">Fig.9 - Representação eletrônica de um diodo. O termo ânodo refere-se ao polo positivo, e o termo cátodo ao polo negativo.</figcaption>
+		<figcaption class="center">Fig.11 - Representação eletrônica de um diodo. O termo ânodo refere-se ao polo positivo, e o termo cátodo ao polo negativo.</figcaption>
 	</figure>
 	<br> <br>
 	<h2 id="LED">LEDs</h2>
 	<p>LED é uma abreviação de Light Emitting Diode, e consiste basicamente em um diodo com cristal, impurezas e encapsulamento especiais para se aproveitar dos fótons emitidos nas transições dos elétrons. Seu funcionamento baseia-se no princípio da conversão luminescente. As cores emitidas dependem do material utilizado (o comprimento de onda formado por eles), que pode ser observado na imagem a seguir:</p>
 	<figure>
 		<img src="../static/images/LED.png" class="center">
-		<figcaption class="center">Fig.10 - Relação material-cor para a formação de luz em um LED.</figcaption>
+		<figcaption class="center">Fig.12 - Relação material-cor para a formação de luz em um LED.</figcaption>
 	</figure>
 	<br> <br>
 	<p>É importante citar que os LEDs possuem uma representação parecida (mas diferente) em circuitos eletrônicos: </p>
 	<figure>
 		<img src="../static/images/reprLED.png" class="center" style="width:35%;">
-		<figcaption class="center">Fig.11 - Representação eletrônica de um LED.</figcaption>
+		<figcaption class="center">Fig.13 - Representação eletrônica de um LED.</figcaption>
 	</figure>
 	<br> <br>
 	<hr>
@@ -182,14 +207,14 @@
 	</ul>
 	<figure>
 		<img src="../static/images/reprTransistor.png" class="center">
-		<figcaption class="center">Fig 12. Composição de um transistor e suas representações eletrônicas.</figurecaption>
+		<figcaption class="center">Fig 14. Composição de um transistor e suas representações eletrônicas.</figurecaption>
 	</figure>
 	<br> <br>
 	<p>O ponto chave de um transistor é que se a junção base-emissor for polarizada diretamente e a junção do coletor inversamente a corrente do emissor e coletor serão altas. Para entender esse fenômeno vamos primeiro analisar a junção base-emissor: os elétrons se detinam para base e, como a base é uma região estreita e pouco dopada, os elétrons lotam a região central e assim atingem a zona de depleção base-coletor. Quando os elétrons atingem a junção base-coletor o efeito do campo elétrico na região e a polarização reversa da região garantem que esses elétrons ultrapassem a barreia e dirijam-se ao polo coletor. Apenas uma pequena parte se destina ao polo da base.</p>
 	<p>Para cada terminal é atribuida uma corrente: Ic para corrente de coletor; Ib para corrente de base e Ie para corrente de emissor. Essas correntes são representadas no sentido convencional da corrente, assim como ilustra a figura a seguir:</p>
 	<figure>
 		<img src="../static/images/esquemaTransistor.png" class="center">
-		<figcaption class="center">Fig 13. Ação das cargas e movimento das correntes de um transistor.</figcaption>
+		<figcaption class="center">Fig 15. Ação das cargas e movimento das correntes de um transistor.</figcaption>
 	</figure>
 	<br> <br>
 	<p>Para calcular a corrente de emissor utiliza-se a primeira lei de Kirchhoff (também conhecido como lei dos nós), onde a soma das correntes de saída é equivalente a soma das corrente incidentes. Portanto:</p>
@@ -208,16 +233,57 @@
 	<p>Quanto às tensões em um transistor, acontece entre os terminais dessa forma: </p>
 	<figure>
 		<img src="../static/images/tensoesTransistor.png" class="center">
-		<figcaption class="center">Fig 14. Representação dos sentidos das tensões.</figcaption>
+		<figcaption class="center">Fig 16. Representação dos sentidos das tensões.</figcaption>
 	</figure>
 	<br> <br>
 	<p>E é dado pela fórmula: </p>
 	<p>$$Vce = Vbe + Vcb$$</p>
 	<p>No caso dos transistores PNP utiliza-se a mesma fórmula, porém, o sentido das tensões é invertivo devido ao sentido invertido das corrente, assim, inverte-se também a notação: usa-se Vec, Veb e Vbc.</p>
 	<hr>
-	<h2>Referências</h2>
+	<h2 id="compu">Os semicondutores na computação</h2>
+	<p>Os transistores foram descobertas revolucionárias que permitiram a substituição de componentes de válvula, que ocupavam muito espaço, por microcomponentes.</p>
+	<p>Entre os componentes mais conhecidos feitos de transistores temos as portas lógicas, componentes definitivos na criação de computadores. De fato, os computadores utilizam muitos transistores; uma única cpu pode possuir cerca de 19 bilhões de transistores.</p>
+	<figure>
+		<img src="../static/images/trans.png" class="center">
+		<figcaption class="center">Fig 17. Gráfico que demonstra especificações de processadores ao longo dos anos, incluindo a quantidade de transistores.</figcaption>
+	</figure>
+	<br> <br>
+	<p>A seguir será demonstrado a implementação das portas lógicas mais simples (NOT, AND e OR).</p>
+	<h3 id="not">Porta NOT</h3>
+	<p>A porta NOT é uma porta lógica que inverte o estado atual, nível lógico 1 se torna 0 e vice-versa.</p>
+	<p>Para isso, quando a entrada A é 0, ou seja, não há energia, a energia se direciona para a saída S. Quando a entrada A é 1, ocorre um curto circuito e a corrente se mantém entre o VCC e o GND.</p>
+	<figure>
+		<img src="../static/images/NOT.png" class="center" style="width:50%;">
+		<figcaption class="center">Fig 18. Uma porta lógica NOT implementada com transistores.</figcaption>
+	</figure>
+	<br> <br>
+	<h3 id="and">Porta AND</h3>
+	<p>A porta AND é uma porta lógica que só possui 1 de saída quando ambas entradas A e B são 1.</p>
+	<p>Para isso, são colocados dois transistores em série, assim, mesmo que um esteja permitindo a passagem o outro pode impedir.</p>
+	<figure>
+		<img src="../static/images/AND.png" class="center" style="width:50%;">
+		<figcaption class="center">Fig 19. Uma porta lógica AND implementada com transistores.</figcaption>
+	</figure>
+	<br> <br>
+	<h3 id="or">Porta OR</h3>
+	<p>A porta OR é uma porta lógica que possui 1 de saída se pelo menos uma das entradas for 1.</p>
+	<p>Para isso, são colocados dois transistores em paralelo, assim, qualquer entrada acionada resultará diretamente na saída, independentemente da outra entrada.</p>
+	<figure>
+		<img src="../static/images/OR.png" class="center" style="width:50%;">
+		<figcaption class="center">Fig 20. Uma porta lógica OR implementada com transistores.</figcaption>
+	</figure>
+	<hr>
+	<h2 id="referencias">Referências</h2>
+	<ul>
+		<li><p>TUTORIALS, Electronics. Logic Gates Tutorial. Disponível em: &lt;https://www.electronics-tutorials.ws/logic&gt;. Acesso em: 27 out. 2019.</p></li>
+		<li><p>PINTO, Luiz Fernando Teixeira; ALBUQUERQUE, Rômulo Oliveira. Eletrônica Volume 2: Eletrônica Analógica. São Paulo: Fundação Padre Anchieta, 2011.</p></li>
+		<li><p>LEDVANCE. Conhecimento da LEDVANCE: as cores de luzes de LED. Disponível em: &lt; https://www.ledvance.com.br/produtos/conhecimentos-sobre-o-produto/nocoes-basicas-do-led/cores-de-luz-do-led/index.jsp &gt;. Acesso em: 27 out. 2019.</p></li>
+		<li><p> RUPP, Karl. 42 Years of Microprocessor Trend Data. Disponível em: &lt;https://www.karlrupp.net/2018/02/42-years-of-microprocessor-trend-data/&gt;. Acesso em: 27 out. 2019.</p></li>
+		<li><p>BREAD, Circuit. Band Gap and Semiconductor Current Carriers. Disponível em: &lt;https://www.circuitbread.com/tutorials/band-gap-and-semiconductor-current-carriers&gt;. Acesso em: 27 out. 2019.</p></li>
+		<li><p>YOUNG, Hugh D.; FREEDMAN, Roger A.. Fisíca IV: Ótica e Fisíca Moderna. 14. ed. Califórina: Pearson, 2016.</p></li>
+	</ul>
 
-	
+
 			</div>
 		</div>
 	</div>
