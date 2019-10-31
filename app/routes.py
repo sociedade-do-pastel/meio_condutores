@@ -1,6 +1,7 @@
 from flask import render_template, request
 from app import app
 from app.questionarioForm import QuestionarioForm
+from app.progForm import ProgForm
 import logging
 import sys
 
@@ -33,3 +34,12 @@ def questionario():
         return render_template("questionario.html", title="Questionario", perg = respostas, percent = percent, form=form, cor= cor_incor, id = id)
     else:
         return render_template("questionario.html", title="Questionario", form = form, id = id)
+
+
+@app.route("/programa", methods=["GET", "POST"])
+def programa():
+    form = ProgForm()
+    if form.validate_on_submit():
+        form.calcularItens( resistencia = form.ohm.data,  resistividade = form.resist.data, ar = form.area.data,  comprimento = form.comp.data,  condutividade = form.condut.data)
+        return render_template("programa.html", form = form, check = 1)
+    return render_template("programa.html", form=form)
