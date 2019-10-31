@@ -6,7 +6,7 @@ class ProgForm(FlaskForm):
     ohm = DecimalField("Resistência",default=None, validators=[NumberRange(min = 0, message="Não insira valores negativos" ), Optional()])
     resist =  DecimalField("Resistividade",default =None, validators=[NumberRange(min = 0, message="Não insira valores negativos" ), Optional()])
     area = DecimalField("Área",default = None, validators=[NumberRange(min = 0, message="Não insira valores negativos" ), Optional()])
-    comp = DecimalField("Largura",default=None, validators=[NumberRange(min = 0, message="Não insira valores negativos" ), Optional()])
+    comp = DecimalField("Comprimento",default=None, validators=[NumberRange(min = 0, message="Não insira valores negativos" ), Optional()])
     condut = DecimalField("Condutividade",default=None, validators=[NumberRange(min = 0, message="Não insira valores negativos" ), Optional()])
     calcular = SubmitField("Calcular! ")
     
