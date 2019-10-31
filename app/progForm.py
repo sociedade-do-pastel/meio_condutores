@@ -17,7 +17,7 @@ class ProgForm(FlaskForm):
                 if not self.resistencia:
                     self.resistencia = (self.resistividade * self.comprimento) / self.ar
                 elif not self.comprimento:
-                    self.comprimento = (self.ar * self.resistencia) / self.condutividade
+                    self.comprimento = (self.ar * self.resistencia) / self.resistividade
                 elif not self.ar:
                     self.ar = (self.resistividade * self.comprimento) / self.resistencia
             else:
